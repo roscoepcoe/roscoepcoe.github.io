@@ -13,6 +13,20 @@
 				scroll-behavior: smooth;
 			}
 		</style>
+
+			<!-- Smooth Scroll & Banner Text Override -->
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Force banner text to display instantly even while page is preloading */
+    body.is-preload #banner .inner {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+</style>
+			
 	</head>
 	<body class="is-preload">
 
